@@ -1,15 +1,24 @@
-package com.example;[cite: 14]
+package com.example;
 
-import net.fabricmc.api.ModInitializer;[cite: 14]
-import org.slf4j.Logger;[cite: 14]
-import org.slf4j.LoggerFactory;[cite: 14]
+import net.fabricmc.api.ModInitializer;
 
-public class ExampleMod implements ModInitializer {[cite: 14]
-    public static final String MOD_ID = "worldtimer";[cite: 14]
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);[cite: 14]
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-    @Override
-    public void onInitialize() {[cite: 14]
-        LOGGER.info("World Timer Mod has been successfully initialized!");[cite: 14]
-    }[cite: 14]
-}[cite: 14]
+public class ExampleMod implements ModInitializer {
+	public static final String MOD_ID = "modid";
+
+	// This logger is used to write text to the console and the log file.
+	// It is considered best practice to use your mod id as the logger's name.
+	// That way, it's clear which mod wrote info, warnings, and errors.
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	@Override
+	public void onInitialize() {
+		// This code runs as soon as Minecraft is in a mod-load-ready state.
+		// However, some things (like resources) may still be uninitialized.
+		// Proceed with mild caution.
+
+		LOGGER.info("Hello Fabric world!");
+	}
+}
