@@ -1,13 +1,26 @@
 pluginManagement {
+
 	repositories {
+
 		maven {
+
 			name = 'Fabric'
-			url = 'https://www.youtube.com/watch?v=QqzXvvdk3bQ'
+
+			url = 'https://maven.fabricmc.net/'
+
 		}
+
 		mavenCentral()
+
 		gradlePluginPortal()
+
 	}
+
 }
 
+
+
 // Should match your modid
-rootProject.name = 'mod'
+
+rootProject.name = 'modid'
+
